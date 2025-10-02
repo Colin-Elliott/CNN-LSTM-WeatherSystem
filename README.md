@@ -13,11 +13,14 @@ The hybrid model combines:
 - **Multi-task Framework**: Simultaneous prediction of multiple weather parameters and weather type classification
 
 ## Project Structure
-- `LSTM-CNN.ipynb`: Implementation of the hybrid CNN-LSTM model
-- `LSTM.ipynb`: Implementation of the LSTM baseline model
-- `CNN.ipynb`: Implementation of the CNN baseline model
-- `MLP.ipynb`: Implementation of the MLP baseline model
-- `Weather-Baoshan(Shanghai).xlsx`: Weather dataset from Baoshan district, Shanghai (2013-2017)
+- `src/`: Contains the source code for the models
+  - `LSTM-CNN.ipynb`: Implementation of the hybrid CNN-LSTM model
+  - `LSTM.ipynb`: Implementation of the LSTM baseline model
+  - `CNN.ipynb`: Implementation of the CNN baseline model
+  - `MLP.ipynb`: Implementation of the MLP baseline model
+- `data/`: Contains the dataset
+  - `Weather-Baoshan(Shanghai).xlsx`: Weather dataset from Baoshan district, Shanghai (2013-2017)
+- `README.md`: Project README file
 
 ## Performance
 The hybrid CNN-LSTM model achieved significant improvements over baseline models:
@@ -43,7 +46,8 @@ The hybrid CNN-LSTM model achieved significant improvements over baseline models
 
 ## Requirements
 - Python 3.x
-- TensorFlow/Keras
+- PyTorch
+- scikit-learn
 - Pandas
 - NumPy
 - Matplotlib
